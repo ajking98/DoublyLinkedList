@@ -67,6 +67,8 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
         checkIndexOutOfBoundException(index);
 
         decrementSizeVariable();
+
+        return null;
     }
 
     @Override
@@ -78,6 +80,8 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
         nodeToRemove.setNext(head);
         head.setPrevious(null);
         decrementSizeVariable();
+
+        return null;
     }
 
     @Override
@@ -87,25 +91,26 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
         }
 
         decrementSizeVariable();
+        return null;
     }
 
     @Override
     public boolean removeFirstOccurrence(T data) {
         checkIllegalArgumentException(data);
 
-
+        return false;
     }
 
     @Override
     public T get(int index) {
         checkIndexOutOfBoundException(index);
 
-
+        return null;
     }
 
     @Override
     public Object[] toArray() {
-
+        return null;
     }
 
     @Override
