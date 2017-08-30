@@ -30,6 +30,7 @@ public class Recursion {
      * @throws IllegalArgumentException if text is null
      */
     public static boolean isPalindrome(String text) {
+        // change
         return false;
     }
 
@@ -55,6 +56,7 @@ public class Recursion {
      * @return The greatest common divisor of x and y
      */
     public static int gcd(int x, int y) {
+        // change
         return 0;
     }
 }

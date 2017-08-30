@@ -13,8 +13,7 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
     private int size;
 
     @Override
-    public void addAtIndex(int index, T data) throws
-            IndexOutOfBoundsException, IllegalArgumentException {
+    public void addAtIndex(int index, T data) {
 
         checkIndexOutOfBoundException(index);
 
@@ -29,7 +28,7 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
     }
 
     @Override
-    public void addToFront(T data) throws IllegalArgumentException {
+    public void addToFront(T data) {
         checkIllegalArgumentException(data);
 
         LinkedListNode newFrontNode = new LinkedListNode(data);
@@ -110,8 +109,16 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
 
     @Override
     public Object[] toArray() {
-        return null;
+        Object[] arrayVersion = new Object[size];
+        LinkedListNode node = head;
+        for (int i = 0; i < size(); i++) {
+            arrayVersion[i] = node.getData();
+            node = node.getNext();
+        }
+
+        return arrayVersion;
     }
+
 
     @Override
     public boolean isEmpty() {
@@ -125,7 +132,8 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
 
     @Override
     public void clear() {
-
+        LinkedListNode newNode = head;
+        newNode.setNext(null);
     }
 
     @Override
