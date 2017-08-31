@@ -15,39 +15,79 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
     @Override
     public void addAtIndex(int index, T data) {
 
-        checkIndexOutOfBoundException(index);
-
-        checkIllegalArgumentException(data);
-
-        LinkedListNode newNode = new LinkedListNode(data);
-
-        for (int i = 0; i < size; i++) {
-
+        if (index < 0 || index > size) {
+            throw new IndexOutOfBoundsException();
         }
 
+        if (data == null) {
+            throw new IllegalArgumentException();
+        }
+
+        if (index == 0) {
+            LinkedListNode<T> newNode = new LinkedListNode(data);
+            newNode.setNext(head);
+            head = newNode;
+        } else if (index == size) {
+            LinkedListNode newNode = new LinkedListNode(data);
+            tail.setNext(newNode);
+            tail = newNode;
+        } else {
+            LinkedListNode newNode = new LinkedListNode(data);
+            int halfPoint = size / 2;
+            if (halfPoint >= index) {
+                // Traverse from the tail
+                LinkedListNode p = tail;
+                for (int i = size - 1; i > index; i--) {
+                    p.setPrevious(p);
+                }
+                p.setPrevious(newNode);
+                newNode.setNext(p);
+            } else {
+                LinkedListNode p = head;
+                for (int i = 0; i < index; i++) {
+                    p.setPrevious(p);
+                }
+                p.setPrevious(newNode);
+                newNode.setNext(p);
+                // Traverse from the head
+            }
+        }
+
+
+
+
+        incrementSizeVariable();
     }
 
     @Override
     public void addToFront(T data) {
-        checkIllegalArgumentException(data);
+        if (data == null) {
+            throw new IllegalArgumentException();
+        }
 
-        LinkedListNode newFrontNode = new LinkedListNode(data);
+        LinkedListNode<T> newFrontNode = new LinkedListNode<T>(data);
         if (size == 0) {
             head = newFrontNode;
             tail = newFrontNode;
         } else {
+//            LinkedListNode<T> nodeToPush = head;
+//            newFrontNode.setNext(nodeToPush);
+//            newFrontNode = head;
+            head.setPrevious(newFrontNode);
             newFrontNode.setNext(head);
-            newFrontNode.setPrevious(null);
             head = newFrontNode;
+            newFrontNode.setPrevious(null);
         }
         incrementSizeVariable();
     }
 
     @Override
     public void addToBack(T data) {
-        checkIllegalArgumentException(data);
+        if (data == null) {
+            throw new IllegalArgumentException();
+        }
 
-        LinkedListNode newBackNode = new LinkedListNode(data);
+        LinkedListNode<T> newBackNode = new LinkedListNode<T>(data);
         if (size == 0) {
             head = newBackNode;
             tail = newBackNode;
@@ -63,7 +103,9 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
 
     @Override
     public T removeAtIndex(int index) {
-        checkIndexOutOfBoundException(index);
+        if (index < 0 || index > size) {
+            throw new IndexOutOfBoundsException();
+        }
 
         decrementSizeVariable();
 
@@ -75,12 +117,20 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
         if (isEmpty()) {
             return null;
         }
-        LinkedListNode nodeToRemove = head;
-        nodeToRemove.setNext(head);
-        head.setPrevious(null);
-        decrementSizeVariable();
 
-        return null;
+
+        LinkedListNode<T> tmp = head;
+        System.out.print(tmp.getData());
+        head = head.getNext();
+        System.out.println(head.getData());
+        head.setPrevious(null);
+//        for (int i = 0; i < size ; i++ ) {
+//            System.out.println(head.getData());
+//            head = head.getNext();
+//        }
+        decrementSizeVariable();
+//        System.out.println(tmp.getData());
+        return head.getData();
     }
 
     @Override
@@ -88,23 +138,45 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
         if (isEmpty()) {
             return null;
         }
+        T data = tail.getData();
+        LinkedListNode newTail = tail.getPrevious();
+        newTail = tail;
+
 
         decrementSizeVariable();
-        return null;
+        System.out.println(data);
+        return data;
+
     }
 
     @Override
     public boolean removeFirstOccurrence(T data) {
-        checkIllegalArgumentException(data);
+        if (data == null) {
+            throw new IllegalArgumentException();
+        }
 
         return false;
     }
 
     @Override
     public T get(int index) {
-        checkIndexOutOfBoundException(index);
+        if (index < 0 || index > size) {
+            throw new IndexOutOfBoundsException("The index you used was " +
+                    "either a negative number or greater than the size of the" +
+                    " list");
+        }
+        LinkedListNode curr = head;
+        if (index == 0) {
+            return head.getData();
+        } else if (index == (size - 1)) {
+            return tail.getData();
+        } else {
+            for (int i = 0; i <= index ; i++ ) {
+                curr = curr.getNext();
+            }
+        }
 
-        return null;
+        return (T) curr.getData();
     }
 
     @Override
@@ -122,7 +194,7 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
 
     @Override
     public boolean isEmpty() {
-        return size == 0;
+        return head == null;
     }
 
     @Override
@@ -132,8 +204,7 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
 
     @Override
     public void clear() {
-        LinkedListNode newNode = head;
-        newNode.setNext(null);
+        head = null;
     }
 
     @Override
@@ -146,27 +217,6 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
     public LinkedListNode<T> getTail() {
         // DO NOT MODIFY!
         return tail;
-    }
-
-    /**
-     *
-     * @param index the index to test if it is out of bounds of the linked list
-     */
-    private void checkIndexOutOfBoundException(int index) {
-        if (index < 0 || index > size) {
-            throw new IndexOutOfBoundsException();
-        }
-    }
-
-    /**
-     *
-     * @param data the data to check if it is a illegal argument and if so
-     *             then it will return null
-     */
-    private void checkIllegalArgumentException(T data) {
-        if (data == null) {
-            throw new IllegalArgumentException();
-        }
     }
 
     /**
