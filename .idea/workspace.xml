@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5b791ad0-877c-44f2-a309-e593ed850a7d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DoublyLinkedList.java" afterPath="$PROJECT_DIR$/src/DoublyLinkedList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Recursion.java" afterPath="$PROJECT_DIR$/src/Recursion.java" />
-    </list>
+    <list default="true" id="5b791ad0-877c-44f2-a309-e593ed850a7d" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,11 +15,10 @@
       <file leaf-file-name="DoublyLinkedList.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DoublyLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="189" column="24" lean-forward="false" selection-start-line="189" selection-start-column="24" selection-end-line="189" selection-end-column="24" />
+            <state relative-caret-position="394">
+              <caret line="29" column="37" lean-forward="false" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
               <folding>
                 <element signature="docComment;class#DoublyLinkedList#0" expanded="true" />
-                <element signature="method#addAtIndex#0;class#DoublyLinkedList#0" expanded="true" />
                 <element signature="method#addToFront#0;class#DoublyLinkedList#0" expanded="true" />
                 <element signature="method#addToBack#0;class#DoublyLinkedList#0" expanded="true" />
                 <element signature="method#removeAtIndex#0;class#DoublyLinkedList#0" expanded="true" />
@@ -30,10 +26,12 @@
                 <element signature="method#removeFromBack#0;class#DoublyLinkedList#0" expanded="true" />
                 <element signature="method#removeFirstOccurrence#0;class#DoublyLinkedList#0" expanded="true" />
                 <element signature="method#get#0;class#DoublyLinkedList#0" expanded="true" />
+                <element signature="method#toArray#0;class#DoublyLinkedList#0" expanded="true" />
                 <element signature="method#clear#0;class#DoublyLinkedList#0" expanded="true" />
                 <element signature="method#getHead#0;class#DoublyLinkedList#0" expanded="true" />
                 <element signature="method#getTail#0;class#DoublyLinkedList#0" expanded="true" />
                 <element signature="docComment;method#optimizedTraversal#0;class#DoublyLinkedList#0" expanded="true" />
+                <element signature="method#optimizedTraversal#0;class#DoublyLinkedList#0" expanded="true" />
                 <element signature="docComment;method#checkForIndexOutOfBoundsForAdding#0;class#DoublyLinkedList#0" expanded="true" />
                 <element signature="method#checkForIndexOutOfBoundsForAdding#0;class#DoublyLinkedList#0" expanded="true" />
                 <element signature="docComment;method#checkForIllegalArgumentException#0;class#DoublyLinkedList#0" expanded="true" />
@@ -46,7 +44,7 @@
       <file leaf-file-name="LinkedListNode.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LinkedListNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
+            <state relative-caret-position="882">
               <caret line="56" column="6" lean-forward="false" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
               <folding>
                 <element signature="docComment;class#LinkedListNode#0" expanded="true" />
@@ -216,9 +214,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="610" />
-    <option name="width" value="625" />
-    <option name="height" value="665" />
+    <option name="x" value="762" />
+    <option name="width" value="781" />
+    <option name="height" value="831" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -514,6 +512,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1551" height="839" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -525,7 +524,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6693712" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="CheckStyle" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36547232" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="CheckStyle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36547232" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900944" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -724,7 +723,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="method#addAtIndex#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#addToFront#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#addToBack#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#removeAtIndex#0;class#DoublyLinkedList#0" expanded="true" />
@@ -732,10 +730,12 @@
             <element signature="method#removeFromBack#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#removeFirstOccurrence#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#get#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#toArray#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#clear#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getHead#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getTail#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="docComment;method#optimizedTraversal#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#optimizedTraversal#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="docComment;method#checkForIndexOutOfBoundsForAdding#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#checkForIndexOutOfBoundsForAdding#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="docComment;method#checkForIllegalArgumentException#0;class#DoublyLinkedList#0" expanded="true" />
@@ -855,7 +855,6 @@
           <caret line="38" column="39" lean-forward="false" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
           <folding>
             <element signature="docComment;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="method#addAtIndex#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#addToFront#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#addToBack#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#removeAtIndex#0;class#DoublyLinkedList#0" expanded="true" />
@@ -863,10 +862,12 @@
             <element signature="method#removeFromBack#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#removeFirstOccurrence#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#get#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#toArray#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#clear#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getHead#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getTail#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="docComment;method#optimizedTraversal#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#optimizedTraversal#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="docComment;method#checkForIndexOutOfBoundsForAdding#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#checkForIndexOutOfBoundsForAdding#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="docComment;method#checkForIllegalArgumentException#0;class#DoublyLinkedList#0" expanded="true" />
@@ -950,7 +951,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="method#addAtIndex#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#addToFront#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#addToBack#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#removeAtIndex#0;class#DoublyLinkedList#0" expanded="true" />
@@ -958,10 +958,12 @@
             <element signature="method#removeFromBack#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#removeFirstOccurrence#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#get#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#toArray#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#clear#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getHead#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getTail#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="docComment;method#optimizedTraversal#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#optimizedTraversal#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="docComment;method#checkForIndexOutOfBoundsForAdding#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#checkForIndexOutOfBoundsForAdding#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="docComment;method#checkForIllegalArgumentException#0;class#DoublyLinkedList#0" expanded="true" />
@@ -1035,7 +1037,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="method#addAtIndex#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#addToFront#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#addToBack#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#removeAtIndex#0;class#DoublyLinkedList#0" expanded="true" />
@@ -1043,10 +1044,12 @@
             <element signature="method#removeFromBack#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#removeFirstOccurrence#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#get#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#toArray#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#clear#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getHead#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getTail#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="docComment;method#optimizedTraversal#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#optimizedTraversal#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="docComment;method#checkForIndexOutOfBoundsForAdding#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#checkForIndexOutOfBoundsForAdding#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="docComment;method#checkForIllegalArgumentException#0;class#DoublyLinkedList#0" expanded="true" />
@@ -1120,7 +1123,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="method#addAtIndex#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#addToFront#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#addToBack#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#removeAtIndex#0;class#DoublyLinkedList#0" expanded="true" />
@@ -1128,10 +1130,12 @@
             <element signature="method#removeFromBack#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#removeFirstOccurrence#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#get#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#toArray#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#clear#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getHead#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getTail#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="docComment;method#optimizedTraversal#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#optimizedTraversal#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="docComment;method#checkForIndexOutOfBoundsForAdding#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#checkForIndexOutOfBoundsForAdding#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="docComment;method#checkForIllegalArgumentException#0;class#DoublyLinkedList#0" expanded="true" />
@@ -1343,7 +1347,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LinkedListNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
+        <state relative-caret-position="882">
           <caret line="56" column="6" lean-forward="false" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
           <folding>
             <element signature="docComment;class#LinkedListNode#0" expanded="true" />
@@ -1361,11 +1365,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DoublyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="189" column="24" lean-forward="false" selection-start-line="189" selection-start-column="24" selection-end-line="189" selection-end-column="24" />
+        <state relative-caret-position="394">
+          <caret line="29" column="37" lean-forward="false" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
           <folding>
             <element signature="docComment;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="method#addAtIndex#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#addToFront#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#addToBack#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#removeAtIndex#0;class#DoublyLinkedList#0" expanded="true" />
@@ -1373,10 +1376,12 @@
             <element signature="method#removeFromBack#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#removeFirstOccurrence#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#get#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#toArray#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#clear#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getHead#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getTail#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="docComment;method#optimizedTraversal#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#optimizedTraversal#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="docComment;method#checkForIndexOutOfBoundsForAdding#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#checkForIndexOutOfBoundsForAdding#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="docComment;method#checkForIllegalArgumentException#0;class#DoublyLinkedList#0" expanded="true" />
