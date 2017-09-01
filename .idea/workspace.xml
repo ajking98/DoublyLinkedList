@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b791ad0-877c-44f2-a309-e593ed850a7d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/LinkedListWillTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/RecursionWillTests.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DoublyLinkedList/Recursion.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DoublyLinkedList/AndrewLinkedListTests.class" afterPath="$PROJECT_DIR$/out/production/DoublyLinkedList/AndrewLinkedListTests.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DoublyLinkedList/DoublyLinkedList.class" afterPath="$PROJECT_DIR$/out/production/DoublyLinkedList/DoublyLinkedList.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AndrewLinkedListTests.java" afterPath="$PROJECT_DIR$/src/AndrewLinkedListTests.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DoublyLinkedList.java" afterPath="$PROJECT_DIR$/src/DoublyLinkedList.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Recursion.java" afterPath="$PROJECT_DIR$/src/Recursion.java" />
     </list>
@@ -26,8 +18,8 @@
       <file leaf-file-name="DoublyLinkedList.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DoublyLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3129">
-              <caret line="149" column="37" lean-forward="false" selection-start-line="149" selection-start-column="37" selection-end-line="149" selection-end-column="37" />
+            <state relative-caret-position="680">
+              <caret line="189" column="24" lean-forward="false" selection-start-line="189" selection-start-column="24" selection-end-line="189" selection-end-column="24" />
               <folding>
                 <element signature="docComment;class#DoublyLinkedList#0" expanded="true" />
                 <element signature="method#addAtIndex#0;class#DoublyLinkedList#0" expanded="true" />
@@ -36,8 +28,8 @@
                 <element signature="method#removeAtIndex#0;class#DoublyLinkedList#0" expanded="true" />
                 <element signature="method#removeFromFront#0;class#DoublyLinkedList#0" expanded="true" />
                 <element signature="method#removeFromBack#0;class#DoublyLinkedList#0" expanded="true" />
+                <element signature="method#removeFirstOccurrence#0;class#DoublyLinkedList#0" expanded="true" />
                 <element signature="method#get#0;class#DoublyLinkedList#0" expanded="true" />
-                <element signature="method#toArray#0;class#DoublyLinkedList#0" expanded="true" />
                 <element signature="method#clear#0;class#DoublyLinkedList#0" expanded="true" />
                 <element signature="method#getHead#0;class#DoublyLinkedList#0" expanded="true" />
                 <element signature="method#getTail#0;class#DoublyLinkedList#0" expanded="true" />
@@ -87,7 +79,7 @@
       <file leaf-file-name="AndrewLinkedListTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AndrewLinkedListTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6510">
+            <state relative-caret-position="263">
               <caret line="312" column="0" lean-forward="false" selection-start-line="312" selection-start-column="0" selection-end-line="312" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -175,13 +167,10 @@
       <file leaf-file-name="Recursion.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Recursion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="546">
+              <caret line="73" column="16" lean-forward="true" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
               <folding>
-                <element signature="docComment;class#Recursion#0" expanded="true" />
-                <element signature="docComment;method#isPalindrome#0;class#Recursion#0" expanded="true" />
-                <element signature="method#gcd#0;class#Recursion#0" expanded="true" />
-                <element signature="docComment;method#checkPalindrome#0;class#Recursion#0" expanded="true" />
+                <element signature="method#isPalindrome#0;class#Recursion#0" expanded="true" />
                 <element signature="method#checkPalindrome#0;class#Recursion#0" expanded="true" />
               </folding>
             </state>
@@ -221,8 +210,8 @@
         <option value="$PROJECT_DIR$/src/RecursionWillTests.java" />
         <option value="$PROJECT_DIR$/src/LinkedListWillTests.java" />
         <option value="$PROJECT_DIR$/src/AndrewLinkedListTests.java" />
-        <option value="$PROJECT_DIR$/src/DoublyLinkedList.java" />
         <option value="$PROJECT_DIR$/src/Recursion.java" />
+        <option value="$PROJECT_DIR$/src/DoublyLinkedList.java" />
       </list>
     </option>
   </component>
@@ -469,8 +458,8 @@
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.RecursionWillTests" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.RecursionStudentTests" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.LinkedListStudentTests" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.LinkedListWillTests" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.LinkedListWillTests" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.LinkedListStudentTests" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.AndrewLinkedListTests" />
       </list>
     </recent_temporary>
@@ -492,25 +481,19 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LinkedListStudentTests - 2017.09.01 at 13h 20m 50s.xml">
+    <history-entry file="AndrewLinkedListTests - 2017.09.01 at 15h 23m 34s.xml">
+      <configuration name="AndrewLinkedListTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LinkedListStudentTests - 2017.09.01 at 15h 23m 40s.xml">
       <configuration name="LinkedListStudentTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LinkedListStudentTests - 2017.09.01 at 13h 22m 45s.xml">
-      <configuration name="LinkedListStudentTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinkedListStudentTests - 2017.09.01 at 13h 33m 36s.xml">
-      <configuration name="LinkedListStudentTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinkedListStudentTests - 2017.09.01 at 13h 41m 56s.xml">
-      <configuration name="LinkedListStudentTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinkedListWillTests - 2017.09.01 at 13h 59m 40s.xml">
+    <history-entry file="LinkedListWillTests - 2017.09.01 at 15h 23m 46s.xml">
       <configuration name="LinkedListWillTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RecursionStudentTests - 2017.09.01 at 14h 51m 49s.xml">
+    <history-entry file="RecursionStudentTests - 2017.09.01 at 14h 59m 59s.xml">
       <configuration name="RecursionStudentTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RecursionStudentTests - 2017.09.01 at 14h 59m 59s.xml">
+    <history-entry file="RecursionStudentTests - 2017.09.01 at 15h 24m 06s.xml">
       <configuration name="RecursionStudentTests" configurationId="JUnit" />
     </history-entry>
     <history-entry file="RecursionWillTests - 2017.09.01 at 15h 00m 17s.xml">
@@ -522,10 +505,15 @@
     <history-entry file="RecursionWillTests - 2017.09.01 at 15h 21m 11s.xml">
       <configuration name="RecursionWillTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RecursionWillTests - 2017.09.01 at 15h 23m 57s.xml">
+      <configuration name="RecursionWillTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RecursionWillTests - 2017.09.01 at 15h 24m 13s.xml">
+      <configuration name="RecursionWillTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1551" height="839" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -537,7 +525,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6693712" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="CheckStyle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36573577" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="CheckStyle" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36547232" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900944" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -724,10 +712,7 @@
         <state relative-caret-position="252">
           <caret line="40" column="47" lean-forward="false" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
           <folding>
-            <element signature="docComment;class#Recursion#0" expanded="true" />
-            <element signature="docComment;method#isPalindrome#0;class#Recursion#0" expanded="true" />
-            <element signature="method#gcd#0;class#Recursion#0" expanded="true" />
-            <element signature="docComment;method#checkPalindrome#0;class#Recursion#0" expanded="true" />
+            <element signature="method#isPalindrome#0;class#Recursion#0" expanded="true" />
             <element signature="method#checkPalindrome#0;class#Recursion#0" expanded="true" />
           </folding>
         </state>
@@ -745,8 +730,8 @@
             <element signature="method#removeAtIndex#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#removeFromFront#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#removeFromBack#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#removeFirstOccurrence#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#get#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="method#toArray#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#clear#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getHead#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getTail#0;class#DoublyLinkedList#0" expanded="true" />
@@ -832,10 +817,7 @@
         <state relative-caret-position="168">
           <caret line="58" column="17" lean-forward="false" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
           <folding>
-            <element signature="docComment;class#Recursion#0" expanded="true" />
-            <element signature="docComment;method#isPalindrome#0;class#Recursion#0" expanded="true" />
-            <element signature="method#gcd#0;class#Recursion#0" expanded="true" />
-            <element signature="docComment;method#checkPalindrome#0;class#Recursion#0" expanded="true" />
+            <element signature="method#isPalindrome#0;class#Recursion#0" expanded="true" />
             <element signature="method#checkPalindrome#0;class#Recursion#0" expanded="true" />
           </folding>
         </state>
@@ -879,8 +861,8 @@
             <element signature="method#removeAtIndex#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#removeFromFront#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#removeFromBack#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#removeFirstOccurrence#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#get#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="method#toArray#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#clear#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getHead#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getTail#0;class#DoublyLinkedList#0" expanded="true" />
@@ -948,10 +930,7 @@
         <state relative-caret-position="168">
           <caret line="58" column="17" lean-forward="false" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
           <folding>
-            <element signature="docComment;class#Recursion#0" expanded="true" />
-            <element signature="docComment;method#isPalindrome#0;class#Recursion#0" expanded="true" />
-            <element signature="method#gcd#0;class#Recursion#0" expanded="true" />
-            <element signature="docComment;method#checkPalindrome#0;class#Recursion#0" expanded="true" />
+            <element signature="method#isPalindrome#0;class#Recursion#0" expanded="true" />
             <element signature="method#checkPalindrome#0;class#Recursion#0" expanded="true" />
           </folding>
         </state>
@@ -977,8 +956,8 @@
             <element signature="method#removeAtIndex#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#removeFromFront#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#removeFromBack#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#removeFirstOccurrence#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#get#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="method#toArray#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#clear#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getHead#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getTail#0;class#DoublyLinkedList#0" expanded="true" />
@@ -1036,10 +1015,7 @@
         <state relative-caret-position="168">
           <caret line="58" column="17" lean-forward="false" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
           <folding>
-            <element signature="docComment;class#Recursion#0" expanded="true" />
-            <element signature="docComment;method#isPalindrome#0;class#Recursion#0" expanded="true" />
-            <element signature="method#gcd#0;class#Recursion#0" expanded="true" />
-            <element signature="docComment;method#checkPalindrome#0;class#Recursion#0" expanded="true" />
+            <element signature="method#isPalindrome#0;class#Recursion#0" expanded="true" />
             <element signature="method#checkPalindrome#0;class#Recursion#0" expanded="true" />
           </folding>
         </state>
@@ -1065,8 +1041,8 @@
             <element signature="method#removeAtIndex#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#removeFromFront#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#removeFromBack#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#removeFirstOccurrence#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#get#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="method#toArray#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#clear#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getHead#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getTail#0;class#DoublyLinkedList#0" expanded="true" />
@@ -1124,10 +1100,7 @@
         <state relative-caret-position="21">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
-            <element signature="docComment;class#Recursion#0" expanded="true" />
-            <element signature="docComment;method#isPalindrome#0;class#Recursion#0" expanded="true" />
-            <element signature="method#gcd#0;class#Recursion#0" expanded="true" />
-            <element signature="docComment;method#checkPalindrome#0;class#Recursion#0" expanded="true" />
+            <element signature="method#isPalindrome#0;class#Recursion#0" expanded="true" />
             <element signature="method#checkPalindrome#0;class#Recursion#0" expanded="true" />
           </folding>
         </state>
@@ -1153,8 +1126,8 @@
             <element signature="method#removeAtIndex#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#removeFromFront#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#removeFromBack#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#removeFirstOccurrence#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#get#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="method#toArray#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#clear#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getHead#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getTail#0;class#DoublyLinkedList#0" expanded="true" />
@@ -1212,10 +1185,7 @@
         <state relative-caret-position="21">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
-            <element signature="docComment;class#Recursion#0" expanded="true" />
-            <element signature="docComment;method#isPalindrome#0;class#Recursion#0" expanded="true" />
-            <element signature="method#gcd#0;class#Recursion#0" expanded="true" />
-            <element signature="docComment;method#checkPalindrome#0;class#Recursion#0" expanded="true" />
+            <element signature="method#isPalindrome#0;class#Recursion#0" expanded="true" />
             <element signature="method#checkPalindrome#0;class#Recursion#0" expanded="true" />
           </folding>
         </state>
@@ -1280,34 +1250,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AndrewLinkedListTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6510">
-          <caret line="312" column="0" lean-forward="false" selection-start-line="312" selection-start-column="0" selection-end-line="312" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#AndrewLinkedListTests#0" expanded="true" />
-            <element signature="method#testAddAtIndex#0;class#AndrewLinkedListTests#0" expanded="true" />
-            <element signature="method#testAddToFront#0;class#AndrewLinkedListTests#0" expanded="true" />
-            <element signature="method#testAddToBack#0;class#AndrewLinkedListTests#0" expanded="true" />
-            <element signature="method#testRemoveAtIndex#0;class#AndrewLinkedListTests#0" expanded="true" />
-            <element signature="method#testRemoveFromFront#0;class#AndrewLinkedListTests#0" expanded="true" />
-            <element signature="method#testRemoveFromBack#0;class#AndrewLinkedListTests#0" expanded="true" />
-            <element signature="method#testGet#0;class#AndrewLinkedListTests#0" expanded="true" />
-            <element signature="method#testToArray#0;class#AndrewLinkedListTests#0" expanded="true" />
-            <element signature="method#testIsEmpty#0;class#AndrewLinkedListTests#0" expanded="true" />
-            <element signature="method#testSize#0;class#AndrewLinkedListTests#0" expanded="true" />
-            <element signature="method#testClear#0;class#AndrewLinkedListTests#0" expanded="true" />
-            <element signature="docComment;method#checkValidList#0;class#AndrewLinkedListTests#0" expanded="true" />
-            <element signature="method#checkValidList#0;class#AndrewLinkedListTests#0" expanded="true" />
-            <element signature="docComment;method#checkValidList#1;class#AndrewLinkedListTests#0" expanded="true" />
-            <element signature="method#checkValidList#1;class#AndrewLinkedListTests#0" expanded="true" />
-            <element signature="docComment;method#checkValidList#2;class#AndrewLinkedListTests#0" expanded="true" />
-            <element signature="method#checkValidList#2;class#AndrewLinkedListTests#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LinkedListInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -1362,14 +1304,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Recursion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="546">
+          <caret line="73" column="16" lean-forward="true" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
           <folding>
-            <element signature="docComment;class#Recursion#0" expanded="true" />
-            <element signature="docComment;method#isPalindrome#0;class#Recursion#0" expanded="true" />
-            <element signature="method#gcd#0;class#Recursion#0" expanded="true" />
-            <element signature="docComment;method#checkPalindrome#0;class#Recursion#0" expanded="true" />
+            <element signature="method#isPalindrome#0;class#Recursion#0" expanded="true" />
             <element signature="method#checkPalindrome#0;class#Recursion#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AndrewLinkedListTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="312" column="0" lean-forward="false" selection-start-line="312" selection-start-column="0" selection-end-line="312" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#AndrewLinkedListTests#0" expanded="true" />
+            <element signature="method#testAddAtIndex#0;class#AndrewLinkedListTests#0" expanded="true" />
+            <element signature="method#testAddToFront#0;class#AndrewLinkedListTests#0" expanded="true" />
+            <element signature="method#testAddToBack#0;class#AndrewLinkedListTests#0" expanded="true" />
+            <element signature="method#testRemoveAtIndex#0;class#AndrewLinkedListTests#0" expanded="true" />
+            <element signature="method#testRemoveFromFront#0;class#AndrewLinkedListTests#0" expanded="true" />
+            <element signature="method#testRemoveFromBack#0;class#AndrewLinkedListTests#0" expanded="true" />
+            <element signature="method#testGet#0;class#AndrewLinkedListTests#0" expanded="true" />
+            <element signature="method#testToArray#0;class#AndrewLinkedListTests#0" expanded="true" />
+            <element signature="method#testIsEmpty#0;class#AndrewLinkedListTests#0" expanded="true" />
+            <element signature="method#testSize#0;class#AndrewLinkedListTests#0" expanded="true" />
+            <element signature="method#testClear#0;class#AndrewLinkedListTests#0" expanded="true" />
+            <element signature="docComment;method#checkValidList#0;class#AndrewLinkedListTests#0" expanded="true" />
+            <element signature="method#checkValidList#0;class#AndrewLinkedListTests#0" expanded="true" />
+            <element signature="docComment;method#checkValidList#1;class#AndrewLinkedListTests#0" expanded="true" />
+            <element signature="method#checkValidList#1;class#AndrewLinkedListTests#0" expanded="true" />
+            <element signature="docComment;method#checkValidList#2;class#AndrewLinkedListTests#0" expanded="true" />
+            <element signature="method#checkValidList#2;class#AndrewLinkedListTests#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1394,8 +1361,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DoublyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3129">
-          <caret line="149" column="37" lean-forward="false" selection-start-line="149" selection-start-column="37" selection-end-line="149" selection-end-column="37" />
+        <state relative-caret-position="680">
+          <caret line="189" column="24" lean-forward="false" selection-start-line="189" selection-start-column="24" selection-end-line="189" selection-end-column="24" />
           <folding>
             <element signature="docComment;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#addAtIndex#0;class#DoublyLinkedList#0" expanded="true" />
@@ -1404,8 +1371,8 @@
             <element signature="method#removeAtIndex#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#removeFromFront#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#removeFromBack#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#removeFirstOccurrence#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#get#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="method#toArray#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#clear#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getHead#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getTail#0;class#DoublyLinkedList#0" expanded="true" />

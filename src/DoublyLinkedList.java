@@ -4,7 +4,7 @@
  * @author Ahmed Gedi=
  * @userid agedi3
  * @GTID 903197142
- * @version 1.0
+ * @version 1.44
  */
 public class DoublyLinkedList<T> implements LinkedListInterface<T> {
     // Do not add new instance variables.
@@ -137,7 +137,7 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
 
     @Override
     public boolean removeFirstOccurrence(T data) {
-        checkForIllegalArgumentException(data, "The data you inputed was null"
+        checkForIllegalArgumentException(data, "The data you inputted was null"
                 + " and that is not what is allowed.");
         LinkedListNode<T> node = head;
         for (int i = 0; i < size; i++) {
@@ -165,20 +165,20 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
         }
 
         if (index < size / 2) {
-            LinkedListNode<T> curr = head;
+            LinkedListNode<T> currentNode = head;
             for (int i = 0; i < size; i++) {
                 if (i == index) {
-                    return curr.getData();
+                    return currentNode.getData();
                 }
-                curr = curr.getNext();
+                currentNode = currentNode.getNext();
             }
         } else {
-            LinkedListNode<T> curr = tail;
+            LinkedListNode<T> currentNode = tail;
             for (int i = size - 1; i >= 0; i--) {
                 if (i == index) {
-                    return curr.getData();
+                    return currentNode.getData();
                 }
-                curr = curr.getPrevious();
+                currentNode = currentNode.getPrevious();
             }
         }
         return null;
@@ -187,7 +187,7 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
     @Override
     public Object[] toArray() {
         Object[] arrayVersion = new Object[size];
-        LinkedListNode node = head;
+        LinkedListNode<T> node = head;
         for (int i = 0; i < size(); i++) {
             arrayVersion[i] = node.getData();
             node = node.getNext();
@@ -231,7 +231,7 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
      *
      * @param index the index to grab for either addAtIndex or get or
      *              removeAtIndex
-     * @return a node to place or remocve
+     * @return a node to place or remove
      */
     private LinkedListNode<T> optimizedTraversal(int index) {
         int distFromFront = index + 1;

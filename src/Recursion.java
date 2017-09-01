@@ -80,13 +80,15 @@ public class Recursion {
      *
      * @param text the string text to check
      * @param size the size of text
-     * @param first this is a variablt holding zero int
+     * @param first this is a variable holding zero int
      * @param last the final index of the text
-     * @return
+     * @return whether or not the text is a palindrome
      */
     private static boolean checkPalindrome(String text, int size, int first,
                                            int last) {
-        if (size <= 1) return true;
+        if (size <= 1) {
+            return true;
+        }
         if (text.charAt(first) == text.charAt(last)) {
             return checkPalindrome(text, size - 2, first + 1,
                     last - 1);
