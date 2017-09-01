@@ -15,64 +15,38 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
     @Override
     public void addAtIndex(int index, T data) {
 
-        if (index < 0 || index > size) {
-            throw new IndexOutOfBoundsException();
-        }
-
+        checkForIndexOutOfBoundsForAdding(index, "Index is out of "
+                + "the possible range. Please request an index within the "
+                + "bounds.");
         if (data == null) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("Null cannot be an argument, "
+                    + "please put in another argument.");
         }
-
         if (index == 0) {
-            LinkedListNode<T> newNode = new LinkedListNode(data);
-            newNode.setNext(head);
-            head = newNode;
+            addToFront(data);
         } else if (index == size) {
-            LinkedListNode newNode = new LinkedListNode(data);
-            tail.setNext(newNode);
-            tail = newNode;
+            addToBack(data);
         } else {
-            LinkedListNode newNode = new LinkedListNode(data);
-            int halfPoint = size / 2;
-            if (halfPoint >= index) {
-                // Traverse from the tail
-                LinkedListNode p = tail;
-                for (int i = size - 1; i > index; i--) {
-                    p.setPrevious(p);
-                }
-                p.setPrevious(newNode);
-                newNode.setNext(p);
-            } else {
-                LinkedListNode p = head;
-                for (int i = 0; i < index; i++) {
-                    p.setPrevious(p);
-                }
-                p.setPrevious(newNode);
-                newNode.setNext(p);
-                // Traverse from the head
-            }
+            LinkedListNode<T> node = optimizedTraversal(index);
+            LinkedListNode<T> newNode = new LinkedListNode<T>(data, node
+                    .getPrevious(), node);
+            node.getPrevious().setNext(newNode);
+            node.setPrevious(newNode);
+            incrementSizeVariable();
         }
 
-
-
-
-        incrementSizeVariable();
     }
 
     @Override
     public void addToFront(T data) {
-        if (data == null) {
-            throw new IllegalArgumentException();
-        }
+        checkForIllegalArgumentException(data, "The data you inputed was null"
+                + " and that is not what is allowed.");
 
         LinkedListNode<T> newFrontNode = new LinkedListNode<T>(data);
         if (size == 0) {
             head = newFrontNode;
             tail = newFrontNode;
         } else {
-//            LinkedListNode<T> nodeToPush = head;
-//            newFrontNode.setNext(nodeToPush);
-//            newFrontNode = head;
             head.setPrevious(newFrontNode);
             newFrontNode.setNext(head);
             head = newFrontNode;
@@ -83,9 +57,8 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
 
     @Override
     public void addToBack(T data) {
-        if (data == null) {
-            throw new IllegalArgumentException();
-        }
+        checkForIllegalArgumentException(data, "The data you inputed was null"
+                + " and that is not what is allowed.");
 
         LinkedListNode<T> newBackNode = new LinkedListNode<T>(data);
         if (size == 0) {
@@ -103,80 +76,112 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
 
     @Override
     public T removeAtIndex(int index) {
-        if (index < 0 || index > size) {
-            throw new IndexOutOfBoundsException();
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException("The index you placed as the "
+                    + "parameter is either negative or greater than the size "
+                    + "of the list.");
+        } else {
+            if (index == 0) {
+                return removeFromFront();
+            } else if (index == size - 1) {
+                return removeFromBack();
+            } else {
+                LinkedListNode<T> nodeToRemove = optimizedTraversal(index);
+                nodeToRemove.getPrevious().setNext(nodeToRemove.getNext());
+                nodeToRemove.getNext().setPrevious(nodeToRemove.getPrevious());
+                decrementSizeVariable();
+                return nodeToRemove.getData();
+            }
         }
 
-        decrementSizeVariable();
-
-        return null;
     }
 
     @Override
     public T removeFromFront() {
         if (isEmpty()) {
             return null;
+        } else {
+            LinkedListNode<T> headNode = head;
+            head = headNode.getNext();
+            T headData = headNode.getData();
+            if (head != null) {
+                head.setPrevious(null);
+            }
+            decrementSizeVariable();
+            if (size == 0) {
+                clear();
+            }
+            return headData;
         }
-
-
-        LinkedListNode<T> tmp = head;
-        System.out.print(tmp.getData());
-        head = head.getNext();
-        System.out.println(head.getData());
-        head.setPrevious(null);
-//        for (int i = 0; i < size ; i++ ) {
-//            System.out.println(head.getData());
-//            head = head.getNext();
-//        }
-        decrementSizeVariable();
-//        System.out.println(tmp.getData());
-        return head.getData();
     }
 
     @Override
     public T removeFromBack() {
         if (isEmpty()) {
             return null;
+        } else {
+            LinkedListNode<T> tailNode = tail;
+            tail = tailNode.getPrevious();
+            T tailData = tailNode.getData();
+            if (tail != null) {
+                tail.setNext(null);
+            }
+            decrementSizeVariable();
+            if (size == 0) {
+                clear();
+            }
+            return tailData;
         }
-        T data = tail.getData();
-        LinkedListNode newTail = tail.getPrevious();
-        newTail = tail;
-
-
-        decrementSizeVariable();
-        System.out.println(data);
-        return data;
 
     }
 
     @Override
     public boolean removeFirstOccurrence(T data) {
-        if (data == null) {
-            throw new IllegalArgumentException();
+        checkForIllegalArgumentException(data, "The data you inputed was null"
+                + " and that is not what is allowed.");
+        LinkedListNode<T> node = head;
+        for (int i = 0; i < size; i++) {
+            if (node.getData().equals(data)) {
+                if (i == 0) {
+                    removeFromFront();
+                } else if (i == size - 1) {
+                    removeFromBack();
+                } else {
+                    removeAtIndex(i);
+                }
+                return true;
+            }
+            node = node.getNext();
         }
-
         return false;
     }
 
     @Override
     public T get(int index) {
-        if (index < 0 || index > size) {
-            throw new IndexOutOfBoundsException("The index you used was " +
-                    "either a negative number or greater than the size of the" +
-                    " list");
-        }
-        LinkedListNode curr = head;
-        if (index == 0) {
-            return head.getData();
-        } else if (index == (size - 1)) {
-            return tail.getData();
-        } else {
-            for (int i = 0; i <= index ; i++ ) {
-                curr = curr.getNext();
-            }
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException("The index you used was "
+                    + "either a negative number or greater than the size of the"
+                    + " list");
         }
 
-        return (T) curr.getData();
+        if (index < size / 2) {
+            LinkedListNode<T> curr = head;
+            for (int i = 0; i < size; i++) {
+                if (i == index) {
+                    return curr.getData();
+                }
+                curr = curr.getNext();
+            }
+        } else {
+            LinkedListNode<T> curr = tail;
+            for (int i = size - 1; i >= 0; i--) {
+                if (i == index) {
+                    return curr.getData();
+                }
+                curr = curr.getPrevious();
+            }
+        }
+        return null;
     }
 
     @Override
@@ -203,8 +208,11 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
     }
 
     @Override
+
     public void clear() {
         head = null;
+        tail = null;
+        size = 0;
     }
 
     @Override
@@ -220,6 +228,36 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
     }
 
     /**
+     *
+     * @param index the index to grab for either addAtIndex or get or
+     *              removeAtIndex
+     * @return a node to place or remocve
+     */
+    private LinkedListNode<T> optimizedTraversal(int index) {
+        int distFromFront = index + 1;
+        int distFromBack = size - index;
+        if (distFromFront < distFromBack) {
+            LinkedListNode<T> node = head;
+            for (int i = 0; i < index; i++) {
+                node = node.getNext();
+            }
+            return node;
+        } else if (distFromBack < distFromFront) {
+            LinkedListNode<T> node = tail;
+            for (int i = size - 1; i > index; i--) {
+                node = node.getPrevious();
+            }
+            return node;
+        } else {
+            LinkedListNode<T> node = head;
+            for (int i = 0; i < index; i++) {
+                node = node.getNext();
+            }
+            return node;
+        }
+    }
+
+    /**
      * increments the size variable
      */
     private void incrementSizeVariable() {
@@ -231,5 +269,27 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
      */
     private void decrementSizeVariable() {
         size--;
+    }
+
+    /**
+     *
+     * @param index the index to check for the bounds
+     * @param s the custom string message
+     */
+    private void checkForIndexOutOfBoundsForAdding(int index, String s) {
+        if (index < 0 || index > size) {
+            throw new IndexOutOfBoundsException(s);
+        }
+    }
+
+    /**
+     *
+     * @param data the data to check for an illegal argument
+     * @param s the custom string message
+     */
+    private void checkForIllegalArgumentException(T data, String s) {
+        if (data == null) {
+            throw new IllegalArgumentException(s);
+        }
     }
 }

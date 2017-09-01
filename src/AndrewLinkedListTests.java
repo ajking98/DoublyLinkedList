@@ -491,28 +491,28 @@ public class AndrewLinkedListTests {
         LinkedListNode<String> cur = head;
         while (cur != null) {
             if (cur.getNext() == null) {
-                assertEquals(cur, tail);
+                assertEquals("Element with null next is not tail", cur, tail);
             } else {
-                assertEquals(cur, cur.getNext().getPrevious());
+                assertEquals("Previous pointer does not agree with next pointer", cur, cur.getNext().getPrevious());
             }
             checkSize++;
             cur = cur.getNext();
         }
-        assertEquals(size, checkSize);
+        assertEquals("Size does not equal number of elements when traversing forward", size, checkSize);
 
         // check going backward
         checkSize = 0;
         cur = tail;
         while (cur != null) {
             if (cur.getPrevious() == null) {
-                assertEquals(cur, head);
+                assertEquals("Element with null previous is not head", cur, head);
             } else {
-                assertEquals(cur, cur.getPrevious().getNext());
+                assertEquals("Next pointer does not agree with previous pointer", cur, cur.getPrevious().getNext());
             }
             checkSize++;
             cur = cur.getPrevious();
         }
-        assertEquals(size, checkSize);
+        assertEquals("Size does not equal number of elements when traversing backward", size, checkSize);
 
         return size;
     }
@@ -524,7 +524,7 @@ public class AndrewLinkedListTests {
      * @param expectedSize the size that list should be
      */
     public void checkValidList(int expectedSize) {
-        assertEquals(expectedSize, checkValidList());
+        assertEquals("Wrong list size", expectedSize, checkValidList());
     }
 
     /**
@@ -535,6 +535,6 @@ public class AndrewLinkedListTests {
      */
     public void checkValidList(Object[] expectedContents) {
         checkValidList(expectedContents.length);
-        assertArrayEquals(list.toArray(), expectedContents);
+        assertArrayEquals("List data is not equal", list.toArray(), expectedContents);
     }
 }

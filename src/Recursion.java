@@ -1,10 +1,10 @@
 /**
  * Your implementation of the isPalindrome and gcd methods
  *
- * @author YOUR NAME HERE
- * @userid YOUR USER ID HERE (i.e. gburdell3)
- * @GTID YOUR GT ID HERE (i.e. 900000000)
- * @version 1.0
+ * @author Ahmed Gedi
+ * @userid agedi3
+ * @GTID 903197142
+ * @version 1.44
  */
 public class Recursion {
 
@@ -30,8 +30,16 @@ public class Recursion {
      * @throws IllegalArgumentException if text is null
      */
     public static boolean isPalindrome(String text) {
-        // change
-        return false;
+        if (text == null) {
+            throw new IllegalArgumentException("The String parameter is null, "
+                    + "please type something else in.");
+        }
+        if (text.length() <= 1) {
+            return true;
+        } else {
+            return checkPalindrome(text, text.length(), 0, text.length() - 1);
+        }
+
     }
 
     /**
@@ -56,7 +64,33 @@ public class Recursion {
      * @return The greatest common divisor of x and y
      */
     public static int gcd(int x, int y) {
-        // change
-        return 0;
+        if (x < 0 || y < 0) {
+            throw new IllegalArgumentException("The first or second input is "
+                    + "a negative number. Please put in a number greater than "
+                    + "zero.");
+        }
+        if (y == 0) {
+            return x;
+        } else {
+            return gcd(y, x % y);
+        }
+    }
+
+    /**
+     *
+     * @param text the string text to check
+     * @param size the size of text
+     * @param first this is a variablt holding zero int
+     * @param last the final index of the text
+     * @return
+     */
+    private static boolean checkPalindrome(String text, int size, int first,
+                                           int last) {
+        if (size <= 1) return true;
+        if (text.charAt(first) == text.charAt(last)) {
+            return checkPalindrome(text, size - 2, first + 1,
+                    last - 1);
+        }
+        return false;
     }
 }
