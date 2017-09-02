@@ -17,41 +17,51 @@
       <file leaf-file-name="DoublyLinkedList.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DoublyLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state relative-caret-position="399">
+              <caret line="98" column="8" lean-forward="false" selection-start-line="98" selection-start-column="8" selection-end-line="98" selection-end-column="8" />
               <folding>
-                <element signature="method#addToFront#0;class#DoublyLinkedList#0" expanded="true" />
-                <element signature="method#addToBack#0;class#DoublyLinkedList#0" expanded="true" />
-                <element signature="method#removeAtIndex#0;class#DoublyLinkedList#0" expanded="true" />
                 <element signature="method#removeFromFront#0;class#DoublyLinkedList#0" expanded="true" />
-                <element signature="method#removeFromBack#0;class#DoublyLinkedList#0" expanded="true" />
+                <element signature="method#deleteLastNode#0;class#DoublyLinkedList#0" expanded="true" />
+                <element signature="e#2622#2623#0" expanded="true" />
+                <element signature="e#2649#2650#0" expanded="true" />
                 <element signature="method#removeFirstOccurrence#0;class#DoublyLinkedList#0" expanded="true" />
                 <element signature="method#get#0;class#DoublyLinkedList#0" expanded="true" />
-                <element signature="e#5298#5299#0" expanded="true" />
-                <element signature="e#5333#5334#0" expanded="true" />
-                <element signature="e#5372#5373#0" expanded="true" />
-                <element signature="e#5399#5400#0" expanded="true" />
+                <element signature="method#toArray#0;class#DoublyLinkedList#0" expanded="true" />
+                <element signature="e#4303#4304#0" expanded="true" />
+                <element signature="e#4338#4339#0" expanded="true" />
+                <element signature="e#4377#4378#0" expanded="true" />
+                <element signature="e#4404#4405#0" expanded="true" />
                 <element signature="method#clear#0;class#DoublyLinkedList#0" expanded="true" />
                 <element signature="method#getHead#0;class#DoublyLinkedList#0" expanded="true" />
                 <element signature="method#getTail#0;class#DoublyLinkedList#0" expanded="true" />
                 <element signature="method#optimizedTraversal#0;class#DoublyLinkedList#0" expanded="true" />
-                <element signature="e#6763#6764#0" expanded="true" />
-                <element signature="e#6785#6786#0" expanded="true" />
-                <element signature="e#6881#6882#0" expanded="true" />
-                <element signature="e#6903#6904#0" expanded="true" />
+                <element signature="e#5804#5805#0" expanded="true" />
+                <element signature="e#5826#5827#0" expanded="true" />
+                <element signature="e#5922#5923#0" expanded="true" />
+                <element signature="e#5944#5945#0" expanded="true" />
                 <element signature="method#checkForIndexOutOfBoundsForAdding#0;class#DoublyLinkedList#0" expanded="true" />
                 <element signature="method#checkForIllegalArgumentException#0;class#DoublyLinkedList#0" expanded="true" />
                 <element signature="method#addAtIndexEfficientlyByTraversing#0;class#DoublyLinkedList#0" expanded="true" />
                 <element signature="docComment;method#isEqualToZero#0;class#DoublyLinkedList#0" expanded="true" />
-                <element signature="e#8187#8188#0" expanded="true" />
-                <element signature="e#8220#8221#0" expanded="true" />
+                <element signature="e#7228#7229#0" expanded="true" />
+                <element signature="e#7261#7262#0" expanded="true" />
                 <element signature="docComment;method#isEqualToSize#0;class#DoublyLinkedList#0" expanded="true" />
-                <element signature="e#8326#8327#0" expanded="true" />
-                <element signature="e#8362#8363#0" expanded="true" />
+                <element signature="e#7367#7368#0" expanded="true" />
+                <element signature="e#7403#7404#0" expanded="true" />
                 <element signature="docComment;method#addNodeToEmptyList#0;class#DoublyLinkedList#0" expanded="true" />
                 <element signature="method#addNodeToEmptyList#0;class#DoublyLinkedList#0" expanded="true" />
                 <element signature="docComment;method#createNewNodeAsHead#0;class#DoublyLinkedList#0" expanded="true" />
                 <element signature="method#createNewNodeAsHead#0;class#DoublyLinkedList#0" expanded="true" />
+                <element signature="docComment;method#createNewNodeAsTail#0;class#DoublyLinkedList#0" expanded="true" />
+                <element signature="method#createNewNodeAsTail#0;class#DoublyLinkedList#0" expanded="true" />
+                <element signature="docComment;method#checkForIndexOutOfBounds#0;class#DoublyLinkedList#0" expanded="true" />
+                <element signature="method#checkForIndexOutOfBounds#0;class#DoublyLinkedList#0" expanded="true" />
+                <element signature="docComment;method#removeAtIndexEfficientlyByTraversing#0;class#DoublyLinkedList#0" expanded="true" />
+                <element signature="method#removeAtIndexEfficientlyByTraversing#0;class#DoublyLinkedList#0" expanded="true" />
+                <element signature="method#checkIfEmpty#0;class#DoublyLinkedList#0" expanded="true" />
+                <element signature="method#deleteFirstNode#0;class#DoublyLinkedList#0" expanded="true" />
+                <element signature="e#9298#9299#0" expanded="true" />
+                <element signature="e#9325#9326#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -464,17 +474,17 @@
     <history-entry file="AndrewLinkedListTests - 2017.09.02 at 14h 50m 51s.xml">
       <configuration name="AndrewLinkedListTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LinkedListStudentTests - 2017.09.01 at 15h 23m 40s.xml">
-      <configuration name="LinkedListStudentTests" configurationId="JUnit" />
+    <history-entry file="AndrewLinkedListTests - 2017.09.02 at 15h 17m 48s.xml">
+      <configuration name="AndrewLinkedListTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LinkedListWillTests - 2017.09.01 at 15h 23m 46s.xml">
-      <configuration name="LinkedListWillTests" configurationId="JUnit" />
+    <history-entry file="AndrewLinkedListTests - 2017.09.02 at 15h 52m 03s.xml">
+      <configuration name="AndrewLinkedListTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RecursionStudentTests - 2017.09.01 at 15h 24m 06s.xml">
-      <configuration name="RecursionStudentTests" configurationId="JUnit" />
+    <history-entry file="AndrewLinkedListTests - 2017.09.02 at 15h 52m 55s.xml">
+      <configuration name="AndrewLinkedListTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RecursionWillTests - 2017.09.01 at 15h 20m 50s.xml">
-      <configuration name="RecursionWillTests" configurationId="JUnit" />
+    <history-entry file="AndrewLinkedListTests - 2017.09.02 at 16h 01m 59s.xml">
+      <configuration name="AndrewLinkedListTests" configurationId="JUnit" />
     </history-entry>
     <history-entry file="RecursionWillTests - 2017.09.01 at 15h 21m 11s.xml">
       <configuration name="RecursionWillTests" configurationId="JUnit" />
@@ -618,38 +628,48 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#addToFront#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="method#addToBack#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="method#removeAtIndex#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#removeFromFront#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="method#removeFromBack#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#deleteLastNode#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="e#2622#2623#0" expanded="true" />
+            <element signature="e#2649#2650#0" expanded="true" />
             <element signature="method#removeFirstOccurrence#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#get#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="e#5298#5299#0" expanded="true" />
-            <element signature="e#5333#5334#0" expanded="true" />
-            <element signature="e#5372#5373#0" expanded="true" />
-            <element signature="e#5399#5400#0" expanded="true" />
+            <element signature="method#toArray#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="e#4303#4304#0" expanded="true" />
+            <element signature="e#4338#4339#0" expanded="true" />
+            <element signature="e#4377#4378#0" expanded="true" />
+            <element signature="e#4404#4405#0" expanded="true" />
             <element signature="method#clear#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getHead#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getTail#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#optimizedTraversal#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="e#6763#6764#0" expanded="true" />
-            <element signature="e#6785#6786#0" expanded="true" />
-            <element signature="e#6881#6882#0" expanded="true" />
-            <element signature="e#6903#6904#0" expanded="true" />
+            <element signature="e#5804#5805#0" expanded="true" />
+            <element signature="e#5826#5827#0" expanded="true" />
+            <element signature="e#5922#5923#0" expanded="true" />
+            <element signature="e#5944#5945#0" expanded="true" />
             <element signature="method#checkForIndexOutOfBoundsForAdding#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#checkForIllegalArgumentException#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#addAtIndexEfficientlyByTraversing#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="docComment;method#isEqualToZero#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="e#8187#8188#0" expanded="true" />
-            <element signature="e#8220#8221#0" expanded="true" />
+            <element signature="e#7228#7229#0" expanded="true" />
+            <element signature="e#7261#7262#0" expanded="true" />
             <element signature="docComment;method#isEqualToSize#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="e#8326#8327#0" expanded="true" />
-            <element signature="e#8362#8363#0" expanded="true" />
+            <element signature="e#7367#7368#0" expanded="true" />
+            <element signature="e#7403#7404#0" expanded="true" />
             <element signature="docComment;method#addNodeToEmptyList#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#addNodeToEmptyList#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="docComment;method#createNewNodeAsHead#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#createNewNodeAsHead#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="docComment;method#createNewNodeAsTail#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#createNewNodeAsTail#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="docComment;method#checkForIndexOutOfBounds#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#checkForIndexOutOfBounds#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="docComment;method#removeAtIndexEfficientlyByTraversing#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#removeAtIndexEfficientlyByTraversing#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#checkIfEmpty#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#deleteFirstNode#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="e#9298#9299#0" expanded="true" />
+            <element signature="e#9325#9326#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -764,38 +784,48 @@
         <state relative-caret-position="399">
           <caret line="38" column="39" lean-forward="false" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
           <folding>
-            <element signature="method#addToFront#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="method#addToBack#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="method#removeAtIndex#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#removeFromFront#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="method#removeFromBack#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#deleteLastNode#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="e#2622#2623#0" expanded="true" />
+            <element signature="e#2649#2650#0" expanded="true" />
             <element signature="method#removeFirstOccurrence#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#get#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="e#5298#5299#0" expanded="true" />
-            <element signature="e#5333#5334#0" expanded="true" />
-            <element signature="e#5372#5373#0" expanded="true" />
-            <element signature="e#5399#5400#0" expanded="true" />
+            <element signature="method#toArray#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="e#4303#4304#0" expanded="true" />
+            <element signature="e#4338#4339#0" expanded="true" />
+            <element signature="e#4377#4378#0" expanded="true" />
+            <element signature="e#4404#4405#0" expanded="true" />
             <element signature="method#clear#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getHead#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getTail#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#optimizedTraversal#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="e#6763#6764#0" expanded="true" />
-            <element signature="e#6785#6786#0" expanded="true" />
-            <element signature="e#6881#6882#0" expanded="true" />
-            <element signature="e#6903#6904#0" expanded="true" />
+            <element signature="e#5804#5805#0" expanded="true" />
+            <element signature="e#5826#5827#0" expanded="true" />
+            <element signature="e#5922#5923#0" expanded="true" />
+            <element signature="e#5944#5945#0" expanded="true" />
             <element signature="method#checkForIndexOutOfBoundsForAdding#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#checkForIllegalArgumentException#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#addAtIndexEfficientlyByTraversing#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="docComment;method#isEqualToZero#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="e#8187#8188#0" expanded="true" />
-            <element signature="e#8220#8221#0" expanded="true" />
+            <element signature="e#7228#7229#0" expanded="true" />
+            <element signature="e#7261#7262#0" expanded="true" />
             <element signature="docComment;method#isEqualToSize#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="e#8326#8327#0" expanded="true" />
-            <element signature="e#8362#8363#0" expanded="true" />
+            <element signature="e#7367#7368#0" expanded="true" />
+            <element signature="e#7403#7404#0" expanded="true" />
             <element signature="docComment;method#addNodeToEmptyList#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#addNodeToEmptyList#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="docComment;method#createNewNodeAsHead#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#createNewNodeAsHead#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="docComment;method#createNewNodeAsTail#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#createNewNodeAsTail#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="docComment;method#checkForIndexOutOfBounds#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#checkForIndexOutOfBounds#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="docComment;method#removeAtIndexEfficientlyByTraversing#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#removeAtIndexEfficientlyByTraversing#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#checkIfEmpty#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#deleteFirstNode#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="e#9298#9299#0" expanded="true" />
+            <element signature="e#9325#9326#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -874,38 +904,48 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#addToFront#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="method#addToBack#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="method#removeAtIndex#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#removeFromFront#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="method#removeFromBack#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#deleteLastNode#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="e#2622#2623#0" expanded="true" />
+            <element signature="e#2649#2650#0" expanded="true" />
             <element signature="method#removeFirstOccurrence#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#get#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="e#5298#5299#0" expanded="true" />
-            <element signature="e#5333#5334#0" expanded="true" />
-            <element signature="e#5372#5373#0" expanded="true" />
-            <element signature="e#5399#5400#0" expanded="true" />
+            <element signature="method#toArray#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="e#4303#4304#0" expanded="true" />
+            <element signature="e#4338#4339#0" expanded="true" />
+            <element signature="e#4377#4378#0" expanded="true" />
+            <element signature="e#4404#4405#0" expanded="true" />
             <element signature="method#clear#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getHead#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getTail#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#optimizedTraversal#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="e#6763#6764#0" expanded="true" />
-            <element signature="e#6785#6786#0" expanded="true" />
-            <element signature="e#6881#6882#0" expanded="true" />
-            <element signature="e#6903#6904#0" expanded="true" />
+            <element signature="e#5804#5805#0" expanded="true" />
+            <element signature="e#5826#5827#0" expanded="true" />
+            <element signature="e#5922#5923#0" expanded="true" />
+            <element signature="e#5944#5945#0" expanded="true" />
             <element signature="method#checkForIndexOutOfBoundsForAdding#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#checkForIllegalArgumentException#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#addAtIndexEfficientlyByTraversing#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="docComment;method#isEqualToZero#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="e#8187#8188#0" expanded="true" />
-            <element signature="e#8220#8221#0" expanded="true" />
+            <element signature="e#7228#7229#0" expanded="true" />
+            <element signature="e#7261#7262#0" expanded="true" />
             <element signature="docComment;method#isEqualToSize#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="e#8326#8327#0" expanded="true" />
-            <element signature="e#8362#8363#0" expanded="true" />
+            <element signature="e#7367#7368#0" expanded="true" />
+            <element signature="e#7403#7404#0" expanded="true" />
             <element signature="docComment;method#addNodeToEmptyList#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#addNodeToEmptyList#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="docComment;method#createNewNodeAsHead#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#createNewNodeAsHead#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="docComment;method#createNewNodeAsTail#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#createNewNodeAsTail#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="docComment;method#checkForIndexOutOfBounds#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#checkForIndexOutOfBounds#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="docComment;method#removeAtIndexEfficientlyByTraversing#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#removeAtIndexEfficientlyByTraversing#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#checkIfEmpty#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#deleteFirstNode#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="e#9298#9299#0" expanded="true" />
+            <element signature="e#9325#9326#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -974,38 +1014,48 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#addToFront#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="method#addToBack#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="method#removeAtIndex#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#removeFromFront#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="method#removeFromBack#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#deleteLastNode#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="e#2622#2623#0" expanded="true" />
+            <element signature="e#2649#2650#0" expanded="true" />
             <element signature="method#removeFirstOccurrence#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#get#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="e#5298#5299#0" expanded="true" />
-            <element signature="e#5333#5334#0" expanded="true" />
-            <element signature="e#5372#5373#0" expanded="true" />
-            <element signature="e#5399#5400#0" expanded="true" />
+            <element signature="method#toArray#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="e#4303#4304#0" expanded="true" />
+            <element signature="e#4338#4339#0" expanded="true" />
+            <element signature="e#4377#4378#0" expanded="true" />
+            <element signature="e#4404#4405#0" expanded="true" />
             <element signature="method#clear#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getHead#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getTail#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#optimizedTraversal#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="e#6763#6764#0" expanded="true" />
-            <element signature="e#6785#6786#0" expanded="true" />
-            <element signature="e#6881#6882#0" expanded="true" />
-            <element signature="e#6903#6904#0" expanded="true" />
+            <element signature="e#5804#5805#0" expanded="true" />
+            <element signature="e#5826#5827#0" expanded="true" />
+            <element signature="e#5922#5923#0" expanded="true" />
+            <element signature="e#5944#5945#0" expanded="true" />
             <element signature="method#checkForIndexOutOfBoundsForAdding#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#checkForIllegalArgumentException#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#addAtIndexEfficientlyByTraversing#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="docComment;method#isEqualToZero#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="e#8187#8188#0" expanded="true" />
-            <element signature="e#8220#8221#0" expanded="true" />
+            <element signature="e#7228#7229#0" expanded="true" />
+            <element signature="e#7261#7262#0" expanded="true" />
             <element signature="docComment;method#isEqualToSize#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="e#8326#8327#0" expanded="true" />
-            <element signature="e#8362#8363#0" expanded="true" />
+            <element signature="e#7367#7368#0" expanded="true" />
+            <element signature="e#7403#7404#0" expanded="true" />
             <element signature="docComment;method#addNodeToEmptyList#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#addNodeToEmptyList#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="docComment;method#createNewNodeAsHead#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#createNewNodeAsHead#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="docComment;method#createNewNodeAsTail#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#createNewNodeAsTail#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="docComment;method#checkForIndexOutOfBounds#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#checkForIndexOutOfBounds#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="docComment;method#removeAtIndexEfficientlyByTraversing#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#removeAtIndexEfficientlyByTraversing#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#checkIfEmpty#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#deleteFirstNode#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="e#9298#9299#0" expanded="true" />
+            <element signature="e#9325#9326#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1074,38 +1124,48 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#addToFront#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="method#addToBack#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="method#removeAtIndex#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#removeFromFront#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="method#removeFromBack#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#deleteLastNode#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="e#2622#2623#0" expanded="true" />
+            <element signature="e#2649#2650#0" expanded="true" />
             <element signature="method#removeFirstOccurrence#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#get#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="e#5298#5299#0" expanded="true" />
-            <element signature="e#5333#5334#0" expanded="true" />
-            <element signature="e#5372#5373#0" expanded="true" />
-            <element signature="e#5399#5400#0" expanded="true" />
+            <element signature="method#toArray#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="e#4303#4304#0" expanded="true" />
+            <element signature="e#4338#4339#0" expanded="true" />
+            <element signature="e#4377#4378#0" expanded="true" />
+            <element signature="e#4404#4405#0" expanded="true" />
             <element signature="method#clear#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getHead#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getTail#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#optimizedTraversal#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="e#6763#6764#0" expanded="true" />
-            <element signature="e#6785#6786#0" expanded="true" />
-            <element signature="e#6881#6882#0" expanded="true" />
-            <element signature="e#6903#6904#0" expanded="true" />
+            <element signature="e#5804#5805#0" expanded="true" />
+            <element signature="e#5826#5827#0" expanded="true" />
+            <element signature="e#5922#5923#0" expanded="true" />
+            <element signature="e#5944#5945#0" expanded="true" />
             <element signature="method#checkForIndexOutOfBoundsForAdding#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#checkForIllegalArgumentException#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#addAtIndexEfficientlyByTraversing#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="docComment;method#isEqualToZero#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="e#8187#8188#0" expanded="true" />
-            <element signature="e#8220#8221#0" expanded="true" />
+            <element signature="e#7228#7229#0" expanded="true" />
+            <element signature="e#7261#7262#0" expanded="true" />
             <element signature="docComment;method#isEqualToSize#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="e#8326#8327#0" expanded="true" />
-            <element signature="e#8362#8363#0" expanded="true" />
+            <element signature="e#7367#7368#0" expanded="true" />
+            <element signature="e#7403#7404#0" expanded="true" />
             <element signature="docComment;method#addNodeToEmptyList#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#addNodeToEmptyList#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="docComment;method#createNewNodeAsHead#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#createNewNodeAsHead#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="docComment;method#createNewNodeAsTail#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#createNewNodeAsTail#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="docComment;method#checkForIndexOutOfBounds#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#checkForIndexOutOfBounds#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="docComment;method#removeAtIndexEfficientlyByTraversing#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#removeAtIndexEfficientlyByTraversing#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#checkIfEmpty#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#deleteFirstNode#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="e#9298#9299#0" expanded="true" />
+            <element signature="e#9325#9326#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1345,41 +1405,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DoublyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state relative-caret-position="399">
+          <caret line="98" column="8" lean-forward="false" selection-start-line="98" selection-start-column="8" selection-end-line="98" selection-end-column="8" />
           <folding>
-            <element signature="method#addToFront#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="method#addToBack#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="method#removeAtIndex#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#removeFromFront#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="method#removeFromBack#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#deleteLastNode#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="e#2622#2623#0" expanded="true" />
+            <element signature="e#2649#2650#0" expanded="true" />
             <element signature="method#removeFirstOccurrence#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#get#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="e#5298#5299#0" expanded="true" />
-            <element signature="e#5333#5334#0" expanded="true" />
-            <element signature="e#5372#5373#0" expanded="true" />
-            <element signature="e#5399#5400#0" expanded="true" />
+            <element signature="method#toArray#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="e#4303#4304#0" expanded="true" />
+            <element signature="e#4338#4339#0" expanded="true" />
+            <element signature="e#4377#4378#0" expanded="true" />
+            <element signature="e#4404#4405#0" expanded="true" />
             <element signature="method#clear#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getHead#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#getTail#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#optimizedTraversal#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="e#6763#6764#0" expanded="true" />
-            <element signature="e#6785#6786#0" expanded="true" />
-            <element signature="e#6881#6882#0" expanded="true" />
-            <element signature="e#6903#6904#0" expanded="true" />
+            <element signature="e#5804#5805#0" expanded="true" />
+            <element signature="e#5826#5827#0" expanded="true" />
+            <element signature="e#5922#5923#0" expanded="true" />
+            <element signature="e#5944#5945#0" expanded="true" />
             <element signature="method#checkForIndexOutOfBoundsForAdding#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#checkForIllegalArgumentException#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#addAtIndexEfficientlyByTraversing#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="docComment;method#isEqualToZero#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="e#8187#8188#0" expanded="true" />
-            <element signature="e#8220#8221#0" expanded="true" />
+            <element signature="e#7228#7229#0" expanded="true" />
+            <element signature="e#7261#7262#0" expanded="true" />
             <element signature="docComment;method#isEqualToSize#0;class#DoublyLinkedList#0" expanded="true" />
-            <element signature="e#8326#8327#0" expanded="true" />
-            <element signature="e#8362#8363#0" expanded="true" />
+            <element signature="e#7367#7368#0" expanded="true" />
+            <element signature="e#7403#7404#0" expanded="true" />
             <element signature="docComment;method#addNodeToEmptyList#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#addNodeToEmptyList#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="docComment;method#createNewNodeAsHead#0;class#DoublyLinkedList#0" expanded="true" />
             <element signature="method#createNewNodeAsHead#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="docComment;method#createNewNodeAsTail#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#createNewNodeAsTail#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="docComment;method#checkForIndexOutOfBounds#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#checkForIndexOutOfBounds#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="docComment;method#removeAtIndexEfficientlyByTraversing#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#removeAtIndexEfficientlyByTraversing#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#checkIfEmpty#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="method#deleteFirstNode#0;class#DoublyLinkedList#0" expanded="true" />
+            <element signature="e#9298#9299#0" expanded="true" />
+            <element signature="e#9325#9326#0" expanded="true" />
           </folding>
         </state>
       </provider>

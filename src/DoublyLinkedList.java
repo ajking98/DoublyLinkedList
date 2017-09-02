@@ -54,10 +54,7 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
         if (isEqualToZero(size)) {
             addNodeToEmptyList(newBackNode);
         } else {
-            tail.setNext(newBackNode);
-            newBackNode.setPrevious(tail);
-            tail = newBackNode;
-            newBackNode.setNext(null);
+            createNewNodeAsTail(newBackNode);
         }
 
         incrementSizeVariable();
@@ -65,69 +62,67 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
 
     @Override
     public T removeAtIndex(int index) {
-        if (index < 0 || index >= size) {
-            throw new IndexOutOfBoundsException("The index you placed as the "
-                    + "parameter is either negative or greater than the size "
-                    + "of the list.");
-        } else {
-            if (isEqualToZero(index)) {
-                return removeFromFront();
-            } else if (index == size - 1) {
-                return removeFromBack();
-            } else {
-                LinkedListNode<T> nodeToRemove = optimizedTraversal(index);
-                nodeToRemove.getPrevious().setNext(nodeToRemove.getNext());
-                nodeToRemove.getNext().setPrevious(nodeToRemove.getPrevious());
-                decrementSizeVariable();
-                return nodeToRemove.getData();
-            }
+        checkForIndexOutOfBounds(index);
+
+        if (isEqualToZero(index)) {
+            return removeFromFront();
         }
+        if (index == size - 1) {
+            return removeFromBack();
+        }
+
+        return removeAtIndexEfficientlyByTraversing(index);
+
 
     }
 
     @Override
     public T removeFromFront() {
-        if (isEmpty()) {
-            return null;
-        } else {
-            LinkedListNode<T> headNode = head;
-            head = headNode.getNext();
-            T headData = headNode.getData();
-            if (head != null) {
-                head.setPrevious(null);
-            }
-            decrementSizeVariable();
-            if (isEqualToZero(size)) {
-                clear();
-            }
-            return headData;
-        }
+        if (checkIfEmpty()) return null;
+
+        T headData = deleteFirstNode();
+
+        decrementSizeVariable();
+
+        if (isEqualToZero(size)) clear();
+
+        return headData;
     }
 
     @Override
     public T removeFromBack() {
-        if (isEmpty()) {
-            return null;
-        } else {
-            LinkedListNode<T> tailNode = tail;
-            tail = tailNode.getPrevious();
-            T tailData = tailNode.getData();
-            if (tail != null) {
-                tail.setNext(null);
-            }
-            decrementSizeVariable();
-            if (isEqualToZero(size)) {
-                clear();
-            }
-            return tailData;
-        }
+        if (checkIfEmpty()) return null;
 
+        T tailData = deleteLastNode();
+
+        decrementSizeVariable();
+        
+        if (isEqualToZero(size)) clear();
+
+        return tailData;
+
+
+    }
+
+    private T deleteLastNode() {
+        LinkedListNode<T> node = createNodeTail();
+        tail = node.getPrevious();
+        T tailData = node.getData();
+        if (tail != null) {
+            tail.setNext(null);
+        }
+        return tailData;
+    }
+
+    private LinkedListNode<T> createNodeTail() {
+        return tail;
     }
 
     @Override
     public boolean removeFirstOccurrence(T data) {
         checkForIllegalArgumentException(data);
-        LinkedListNode<T> node = head;
+
+        LinkedListNode<T> node = createNodeHead();
         for (int i = 0; i < size; i++) {
             if (node.getData().equals(data)) {
                 if (isEqualToZero(i)) {
@@ -146,27 +141,23 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
 
     @Override
     public T get(int index) {
-        if (index < 0 || index >= size) {
-            throw new IndexOutOfBoundsException("The index you used was "
-                    + "either a negative number or greater than the size of the"
-                    + " list");
-        }
+        checkForIndexOutOfBounds(index);
 
         if (index < size / 2) {
-            LinkedListNode<T> currentNode = head;
+            LinkedListNode<T> node = createNodeHead();
             for (int i = 0; i < size; i++) {
                 if (i == index) {
-                    return currentNode.getData();
+                    return node.getData();
                 }
-                currentNode = currentNode.getNext();
+                node = node.getNext();
             }
         } else {
-            LinkedListNode<T> currentNode = tail;
+            LinkedListNode<T> node = createNodeTail();
             for (int i = size - 1; i >= 0; i--) {
                 if (i == index) {
-                    return currentNode.getData();
+                    return node.getData();
                 }
-                currentNode = currentNode.getPrevious();
+                node = node.getPrevious();
             }
         }
         return null;
@@ -175,7 +166,7 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
     @Override
     public Object[] toArray() {
         Object[] arrayVersion = new Object[size];
-        LinkedListNode<T> node = head;
+        LinkedListNode<T> node = createNodeHead();
         for (int i = 0; i < size(); i++) {
             arrayVersion[i] = node.getData();
             node = node.getNext();
@@ -222,19 +213,19 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
         int distFromFront = index + 1;
         int distFromBack = size - index;
         if (distFromFront < distFromBack) {
-            LinkedListNode<T> node = head;
+            LinkedListNode<T> node = createNodeHead();
             for (int i = 0; i < index; i++) {
                 node = node.getNext();
             }
             return node;
         } else if (distFromBack < distFromFront) {
-            LinkedListNode<T> node = tail;
+            LinkedListNode<T> node = createNodeTail();
             for (int i = size - 1; i > index; i--) {
                 node = node.getPrevious();
             }
             return node;
         } else {
-            LinkedListNode<T> node = head;
+            LinkedListNode<T> node = createNodeHead();
             for (int i = 0; i < index; i++) {
                 node = node.getNext();
             }
@@ -330,5 +321,60 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
         newFrontNode.setNext(head);
         head = newFrontNode;
         newFrontNode.setPrevious(null);
+    }
+
+    /**
+     *
+     * @param newBackNode
+     */
+    private void createNewNodeAsTail(LinkedListNode<T> newBackNode) {
+        tail.setNext(newBackNode);
+        newBackNode.setPrevious(tail);
+        tail = newBackNode;
+        newBackNode.setNext(null);
+    }
+
+    /**
+     *
+     * @param index
+     */
+    private void checkForIndexOutOfBounds(int index) {
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException("The index you placed as the "
+                    + "parameter is either negative or greater than the size "
+                    + "of the list.");
+        }
+    }
+
+    /**
+     *
+     * @param index
+     * @return
+     */
+    private T removeAtIndexEfficientlyByTraversing(int index) {
+        LinkedListNode<T> nodeToRemove = optimizedTraversal(index);
+        nodeToRemove.getPrevious().setNext(nodeToRemove.getNext());
+        nodeToRemove.getNext().setPrevious(nodeToRemove.getPrevious());
+        decrementSizeVariable();
+        return nodeToRemove.getData();
+    }
+
+    private boolean checkIfEmpty() {
+        if (isEmpty()) {
+            return true;
+        }
+        return false;
+    }
+
+    private T deleteFirstNode() {
+        LinkedListNode<T> node = createNodeHead();
+        head = node.getNext();
+        T headData = node.getData();
+        if (head != null) head.setPrevious(null);
+        return headData;
+    }
+
+    private LinkedListNode<T> createNodeHead() {
+        return head;
     }
 }
