@@ -39,10 +39,7 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
         if (isEqualToZero(size)) {
             addNodeToEmptyList(newFrontNode);
         } else {
-            head.setPrevious(newFrontNode);
-            newFrontNode.setNext(head);
-            head = newFrontNode;
-            newFrontNode.setPrevious(null);
+            createNewNodeAsHead(newFrontNode);
         }
 
         incrementSizeVariable();
@@ -322,5 +319,16 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
     private void addNodeToEmptyList(LinkedListNode<T> newFrontNode) {
         head = newFrontNode;
         tail = newFrontNode;
+    }
+
+    /**
+     *
+     * @param newFrontNode
+     */
+    private void createNewNodeAsHead(LinkedListNode<T> newFrontNode) {
+        head.setPrevious(newFrontNode);
+        newFrontNode.setNext(head);
+        head = newFrontNode;
+        newFrontNode.setPrevious(null);
     }
 }
