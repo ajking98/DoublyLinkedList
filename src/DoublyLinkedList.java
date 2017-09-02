@@ -15,23 +15,16 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
     @Override
     public void addAtIndex(int index, T data) {
 
-        checkForIndexOutOfBoundsForAdding(index, "Index is out of "
-                + "the possible range. Please request an index within the "
-                + "bounds.");
-        if (data == null) {
-            throw new IllegalArgumentException("Null cannot be an argument, "
-                    + "please put in another argument.");
-        }
-        if (index == 0) {
+        checkForIndexOutOfBoundsForAdding(index);
+
+        checkForIllegalArgumentException(data);
+
+        if (isEqualToZero(index)) {
             addToFront(data);
-        } else if (index == size) {
+        } else if (isEqualToSize(index)) {
             addToBack(data);
         } else {
-            LinkedListNode<T> node = optimizedTraversal(index);
-            LinkedListNode<T> newNode = new LinkedListNode<T>(data, node
-                    .getPrevious(), node);
-            node.getPrevious().setNext(newNode);
-            node.setPrevious(newNode);
+            addAtIndexEfficientlyByTraversing(index, data);
             incrementSizeVariable();
         }
 
@@ -39,40 +32,39 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
 
     @Override
     public void addToFront(T data) {
-        checkForIllegalArgumentException(data, "The data you inputed was null"
-                + " and that is not what is allowed.");
+        checkForIllegalArgumentException(data);
 
         LinkedListNode<T> newFrontNode = new LinkedListNode<T>(data);
-        if (size == 0) {
-            head = newFrontNode;
-            tail = newFrontNode;
+
+        if (isEqualToZero(size)) {
+            addNodeToEmptyList(newFrontNode);
         } else {
             head.setPrevious(newFrontNode);
             newFrontNode.setNext(head);
             head = newFrontNode;
             newFrontNode.setPrevious(null);
         }
+
         incrementSizeVariable();
     }
 
     @Override
     public void addToBack(T data) {
-        checkForIllegalArgumentException(data, "The data you inputed was null"
-                + " and that is not what is allowed.");
+        checkForIllegalArgumentException(data);
 
         LinkedListNode<T> newBackNode = new LinkedListNode<T>(data);
-        if (size == 0) {
-            head = newBackNode;
-            tail = newBackNode;
+
+        if (isEqualToZero(size)) {
+            addNodeToEmptyList(newBackNode);
         } else {
             tail.setNext(newBackNode);
             newBackNode.setPrevious(tail);
             tail = newBackNode;
             newBackNode.setNext(null);
         }
+
         incrementSizeVariable();
     }
-
 
     @Override
     public T removeAtIndex(int index) {
@@ -81,7 +73,7 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
                     + "parameter is either negative or greater than the size "
                     + "of the list.");
         } else {
-            if (index == 0) {
+            if (isEqualToZero(index)) {
                 return removeFromFront();
             } else if (index == size - 1) {
                 return removeFromBack();
@@ -108,7 +100,7 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
                 head.setPrevious(null);
             }
             decrementSizeVariable();
-            if (size == 0) {
+            if (isEqualToZero(size)) {
                 clear();
             }
             return headData;
@@ -127,7 +119,7 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
                 tail.setNext(null);
             }
             decrementSizeVariable();
-            if (size == 0) {
+            if (isEqualToZero(size)) {
                 clear();
             }
             return tailData;
@@ -137,12 +129,11 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
 
     @Override
     public boolean removeFirstOccurrence(T data) {
-        checkForIllegalArgumentException(data, "The data you inputted was null"
-                + " and that is not what is allowed.");
+        checkForIllegalArgumentException(data);
         LinkedListNode<T> node = head;
         for (int i = 0; i < size; i++) {
             if (node.getData().equals(data)) {
-                if (i == 0) {
+                if (isEqualToZero(i)) {
                     removeFromFront();
                 } else if (i == size - 1) {
                     removeFromBack();
@@ -196,7 +187,6 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
         return arrayVersion;
     }
 
-
     @Override
     public boolean isEmpty() {
         return head == null;
@@ -208,10 +198,8 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
     }
 
     @Override
-
     public void clear() {
-        head = null;
-        tail = null;
+        addNodeToEmptyList(null);
         size = 0;
     }
 
@@ -276,9 +264,11 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
      * @param index the index to check for the bounds
      * @param s the custom string message
      */
-    private void checkForIndexOutOfBoundsForAdding(int index, String s) {
+    private void checkForIndexOutOfBoundsForAdding(int index) {
         if (index < 0 || index > size) {
-            throw new IndexOutOfBoundsException(s);
+            throw new IndexOutOfBoundsException("Index is out of "
+                    + "the possible range. Please request an index within the "
+                    + "bounds.");
         }
     }
 
@@ -287,9 +277,50 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
      * @param data the data to check for an illegal argument
      * @param s the custom string message
      */
-    private void checkForIllegalArgumentException(T data, String s) {
+    private void checkForIllegalArgumentException(T data) {
         if (data == null) {
-            throw new IllegalArgumentException(s);
+            throw new IllegalArgumentException("Null cannot be an argument, "
+                    + "please put in another argument.");
         }
+    }
+
+    /**
+     *
+     * @param index
+     * @param data
+     */
+    private void addAtIndexEfficientlyByTraversing(int index, T data) {
+        LinkedListNode<T> node = optimizedTraversal(index);
+        LinkedListNode<T> newNode = new LinkedListNode<T>(data, node
+                .getPrevious(), node);
+        node.getPrevious().setNext(newNode);
+        node.setPrevious(newNode);
+    }
+
+    /**
+     *
+     * @param index
+     * @return
+     */
+    private boolean isEqualToZero(int index) {
+        return index == 0;
+    }
+
+    /**
+     *
+     * @param index
+     * @return
+     */
+    private boolean isEqualToSize(int index) {
+        return index == size;
+    }
+
+    /**
+     *
+     * @param newFrontNode
+     */
+    private void addNodeToEmptyList(LinkedListNode<T> newFrontNode) {
+        head = newFrontNode;
+        tail = newFrontNode;
     }
 }
