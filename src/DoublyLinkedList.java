@@ -1,7 +1,7 @@
 /**
  * Your implementation of a DoublyLinkedList
  *
- * @author Ahmed Gedi=
+ * @author Ahmed Gedi
  * @userid agedi3
  * @GTID 903197142
  * @version 1.44
